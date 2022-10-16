@@ -1,0 +1,64 @@
+body{    
+    font-family: 'Poppins', sans-serif;
+    height:100vh;
+    background:#3b3b3b;
+    overflow:hidden;  
+}
+#login{
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color:rgba(0,0,0,0.2);
+    padding:80px;
+    border-radius:15px;
+    box-shadow:1px 0 2px red;
+}
+#login h1{
+    color:white;
+    text-align:left;
+    letter-spacing:2px;
+    text-shadow:1px 1px red,
+    -1px -1px #15a1ff;
+}
+#login input{
+    border:none;
+    outline:none;
+    padding:15px;
+    border-radius:5px;
+    font-size:15px;
+}
+#login button{
+    display:flex;
+    justify-content:center;
+    width:100%;
+    padding:10px;
+    background:#ff407e;
+    color:white;
+    border:none;
+    border-radius:5px;
+    box-shadow:0 0 2px black;
+    position:relative;
+    z-index:2;
+    transition:all ease 350ms;
+    cursor: pointer;
+}
+#login button:after{
+    position:absolute;
+    background:black;;
+    height:100%;
+    width:100%;
+    content:"";
+    top:0;
+    left:0;
+    z-index:-1;
+    transition:all ease 350ms;
+    border-radius:5px;
+    transform:scaleX(0) ;
+}
+#login button:hover:after{
+    transform:scaleX(1);
+}
+#login button:hover{
+    text-shadow:0 0 2px white;
+}
